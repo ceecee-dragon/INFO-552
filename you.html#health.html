@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>You | Health & Body | Femme Fatale</title>
+  <link rel="stylesheet" href="style.css" />
+   <style>
+
+    /* Flip Card Grid */
+    .flip-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr, 1fr, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      justify-items: center;
+    }
+
+    .flip-card {
+      width: 250px;
+      height: 250px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card.flipped .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: 2px solid #000;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: Georgia, serif;
+      box-sizing: border-box;
+    }
+
+    .flip-card-front {
+      background-color: #f7d6e0;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.25rem;
+      padding: 0;
+    }
+
+    .flip-card-back {
+  background: #fffaf6;
+    transform: rotateY(180deg);
+    padding: 14px;
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+  }
+    
+  .box {
+  width: 1000px; 
+  height: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}  
+</style>
+</head>
+<body>
+  <header>
+    <h1>Femme Fatale</h1>
+    <p>“Because knowledge is power and a powerful woman is a dangerous thing.”</p>
+  </header>
+
+  <nav>
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <span class="dropbtn">You ▾</span>
+    <div class="dropdown-content">
+      <a href="you.html#genderandidentity">Gender + Identity</a>
+      <a href="you.html#Health">Healthy Body</a>
+      <a href="you.html#sex">Sex</a>
+      <a href="you.html#rights">Rights</a>
+    </div>
+  </div>
+  <a href="story.html">Story</a>
+  <div class="dropdown">
+    <span class="dropbtn">Resources ▾</a>
+    <div class="dropdown-content">
+      <a href="resources.html#affiliates">Affiliates</a>
+      <a href="resources.html#media">Media</a>
+    </div>
+  </div>
+  <a href="connect.html">Connect</a>
+  <a href="about.html">About</a>
+</nav>
+
+ <div class="h2">Gender & Identity</div>
+  <div class="page-headline">You body is not a negotiation.</div>
+  <section>
+    <h2>Health & Body</h2>
+
+    <section class="flip-container">
+        <!-- Flip Card 1 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>DISCLAIMER</p>
+        </div>
+        <div class="flip-card-back">
+            <P> Femme Fatale is not a medical doctor or any kind of doctor. Always be safe and see a licensed (reputable) professional in case of emergency or if you have general questions. </P>
+        </div>
+      </div>
+    </div>
+<!-- Flip Card 2 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>In Case of Emergency</p>
+        </div>
+        <div class="flip-card-back">
+            <p>Dial 911 for emergency</p>
+            <p>Dial 988 for suicide & prevention hotline</p>
+            <p>Dial 800-799-7233 for domestic abusve & violence (they're available 24/7)</p>
+            <p>text BEGIN to 88788 for the Domestic abuse hotline. (they're available 24/7 by text as well)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 3 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Fun Fact</p>
+        </div>
+        <div class="flip-card-back">
+            <p>you only get one body. Love it. Treat it right for as long as possible so you can maximize your enjoyment</p>
+        </div>
+      </div>
+    </div>
+
+    </section>
+
+  </section>
+<div class="text-box">Health isn’t a one-size-fits-all — literally or figuratively. At Femme Fatale, we know real health is rooted in self-respect, informed choice, and rejecting the lie that you must shrink to be worthy, be silent to fit in, or have picture perfect parts. Generally, health can be broken down into the following things:</div>
+
+<img class="responsive-img"
+     src="https://iili.io/FZ3H3aR.png" alt="the health concept is broken down into three parts, your body, your brain and anything affecting either of those things.">
+<div class="text-box">Being healthy is more than the food you eat and the exercise we get. Being healthy is skincare, dental hygiene, feeling comfortable in the clothes we wear, feeling safe around our friends, and feeling right in our bodies. Being healthy is recognizing when something is making us feel threatened and knowing how to get back to a place where we feel safe again.</div>
+ 
+
+<footer>
+    &copy; 2025 Femme Fatale 
+  </footer>
+</body>
+</html>
+
