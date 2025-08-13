@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>You | Sex & Pleasure | Femme Fatale</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  
+    nav {
+      margin-bottom: 0; 
+    }
+
+    .h2 {
+      margin: 0; 
+      background-color: #881c4c;
+      padding: 1.5rem;
+      font-family: "Cambria", serif;
+      font-size: 2.2rem;
+      color: #fff;
+    }
+
+    /* Flip Card Grid */
+    .flip-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr, 1fr, 1fr));
+      gap: 4rem;
+      padding: 0rem;
+      justify-items: center;
+    }
+
+    .flip-card {
+      width: 325px;
+      height: 325px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card.flipped .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: 2px solid #000;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: Georgia, serif;
+      box-sizing: border-box;
+    }
+
+    .flip-card-front {
+      background-color: #f7d6e0;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.25rem;
+      padding: 0;
+    }
+
+    .flip-card-back {
+      background: #fffaf6;
+      transform: rotateY(180deg);
+      padding: 14px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    .box {
+      width: 1000px; 
+      height: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }  
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Femme Fatale</h1>
+    <p>“Because knowledge is power and a powerful woman is a dangerous thing.”</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <span class="dropbtn">You ▾</span>
+      <div class="dropdown-content">
+        <a href="you.html#genderandidentity">Gender + Identity</a>
+        <a href="you.html#Health">Healthy Body</a>
+        <a href="you.html#sex">Sex</a>
+        <a href="you.html#rights">Rights</a>
+      </div>
+    </div>
+    <a href="story.html">Story</a>
+    <div class="dropdown">
+      <span class="dropbtn">Resources ▾</span>
+      <div class="dropdown-content">
+        <a href="resources.html#affiliates">Affiliates</a>
+        <a href="resources.html#media">Media</a>
+      </div>
+    </div>
+    <a href="connect.html">Connect</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <div class="h2">Sex & Pleasure</div>
+  <div class="page-headline">"Desire is not a sin. Ignorance about your own body is."</div>
+  <br>
+
+  <div class="text-box">
+    <p>Let’s get this straight — or not straight, because we don’t live there — sex and pleasure aren’t just “women’s issues” or “men’s needs.” Sex and pleasure are about autonomy, agency, and joy.</p>
+    <p>Whether you’re a pro-fem boy who loves lipstick and lace, a pink boy rocking crop tops, a tomboy who hates being told to “tone it down,” or anyone in the LGBTQ+ galaxy — you have every right to love your body and find pleasure in it. Your body doesn’t determine how sex should feel or look like. Your pleasure map doesn’t have to follow anyone’s “norm.” Self-exploration isn’t a dirty secret; it’s research. The kind that makes you fluent in your own pleasure language. From vibrators to latex, pleasure and safety can co-exist. Explore responsibly: get tested regularly, learn safer sex practices, and never apologize for bringing your own toy to the party.</p>
+  </div>
+
+  <section class="flip-container">
+    <!-- Flip Card 1 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>What is Sex?</p>
+        </div>
+        <div class="flip-card-back">
+          <p>Sex is any mutually agreed-upon physical intimacy between consenting people that involves touching, stimulation, or penetration of any body part. It's a shared experience where all parties feel safe, respected, and have a good time.</p>
+          <p>You know you're doing it right if everyone is having fun and feels good.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 2 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>What is Consent</p>
+        </div>
+        <div class="flip-card-back">
+          <iframe width="325" height="325" src="https://www.youtube.com/embed/NLKWEUhOHss?si=H6a09g2TghmV1ybn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 3 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>Safe SEXperiments</p> 
+          <p>with our Friend Epi</p>
+        </div>
+        <div class="flip-card-back">
+          <a href="https://heyepiphora.com/new-here/">Meet Piph - a sex toy afficianado, lover of all things queer, and someone really in tune with their body.</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Femme Fatale 
+  </footer>
+</body>
+</html>
