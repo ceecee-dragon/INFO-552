@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Media Page | Femme Fatale</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+    /* Flip Card Grid */
+    .flip-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 5rem;
+      padding: 5rem;
+      justify-items: center;
+    }
+
+    .flip-card {
+      width: 325px;
+      height: 325px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card.flipped .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: 2px solid #000;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: Georgia, serif;
+      box-sizing: border-box;
+    }
+
+    .flip-card-front {
+      background-color: #f7d6e0;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.25rem;
+      padding: 0;
+    }
+
+    .flip-card-front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px;
+    }
+.front .title-overlay{
+    position:absolute;
+    left:0; right:0;
+    bottom:0;
+    padding:8px 12px;
+    background:rgba(0,0,0,.45);
+    color: #fff;
+    font-weight:bold;
+    font-family: Georgia, serif;
+    font-size:0.95rem;
+    text-align:left;
+  }
+
+    .flip-card-back {
+  background: #fffaf6;
+    transform: rotateY(180deg);
+    padding: 14px;
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+  }
+    
+    
+     .synopsis {
+    margin:0;
+    font-size:0.92rem;
+    line-height:1.4;
+    flex:1 1 auto;
+  }
+
+  .tagline {
+    margin-top:.2rem;
+    font-weight:bold;
+    font-size:0.92rem;
+    color:#8b2b3b;
+  }
+
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Femme Fatale</h1>
+    <p>“Because knowledge is power and a powerful woman is a dangerous thing.”</p>
+  </header>
+
+   <nav>
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <span class="dropbtn">You ▾</span>
+    <div class="dropdown-content">
+      <a href="you-gender.html">Gender + Identity</a>
+      <a href="you-health.html">Healthy Body</a>
+      <a href="you-sex.html">Sex</a>
+      <a href="you-rights.html">Rights</a>
+    </div>
+  </div>
+  <a href="story.html">Story</a>
+  <div class="dropdown">
+    <span class="dropbtn">Resources ▾</a>
+    <div class="dropdown-content">
+      <a href="resources-affiliates.html">Affiliates</a>
+      <a href="resources-media.html">Media</a>
+    </div>
+  </div>
+  <a href="connect.html">Connect</a>
+  <a href="about.html">About</a>
+</nav>
+
+ <div class="h2">Media</div>
+  <div class="page-headline">Information and more</div>
+
+ <div class="intro-section">
+  <div class="box1">
+   
+<div class="text-image-wrapper">
+  <div class="box1">
+     <p>My K-8 school librarian once said, "If you plan to not return a book on purpose, that is stealing and stealing is wrong." I'll let you imagine what I asked to prompt such a response.</p>
+    <p>Because I loved her so much and couldn't bear disappointing her, I waited until the last day of the school year to steal a book she checked out to me every week for at least two years. I walked into the library, pretended to read my fave book, and walked out with my book. I have no doubt she knew it was gone, and I'm sure she knew I took it. We never spoke about it—not when our paths crossed years later as professionals. (I ran into her as a high school student and a few times after, when I became an educator.)</p>
+     <p>I don't think she knew, or perhaps she did, the desperation of a girl like me needing to see herself in a story. Perhaps only a librarian truly understands the urgency for marginalized kids to find a mirror in a world of windows. Because I'll tell you something: in my K-12 experience, only four teachers—all women—ever made me feel like I mattered. The rest saw me as good for one thing, or destined for nothing because of my gender. I think a lot of my students and some of you can relate. One of the most meaningful lessons my school librarian taught me was the idea that literacy, books— aren't just for learning; they are lifelines. So while I can't in good conscience condone theft, I do support checking out the books/media below.</p>
+  </div>
+
+  <div class="box-column">
+    <div class="box"><img src="https://iili.io/FQ5vtKN.md.jpg" alt="Lucy Peale Book Cover"></div>
+    <div class="box"><img src="https://iili.io/FQ5vQPp.md.jpg" alt="inner jacket cover"></div>
+  </div>
+</div>
+
+
+  <section class="flip-container">
+    <!-- Flip Card 1 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://iili.io/Ficr9jI.jpg" alt="Sulwe Book Cover">
+          <div class="title-overlay">Sulwe by Lupita Nyong'o</div>
+        </div>
+        <div class="flip-card-back">
+          <p class="synopsis">
+This children's picture book is a quiet revelation. Nyong’o dismantles colorism with tenderness and truth, giving children and adults the language to love their skin and the beauty they have within - a tale of learning to love yourself. A must read for every girl.
+        </p>
+        <div class="tagline">The night sky doesn’t ask to be lighter — neither should you. Let your melanin pop 'n glow like moonshine.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 2 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://iili.io/FLklxRe.md.jpg" alt="Brave New Girl Book Cover">
+          <div class="title-overlay">Brave New Girl by Rachel Vincent (series)</div>
+        </div>
+        <div class="flip-card-back">
+        <p class="synopsis">
+In this YA dystopia, human worth is reduced to genetic sameness. Vincent’s heroine, a mutant in the system, rebukes conformity. The pacing is crisp and the stakes are urgent; under the cloning sheen lies a feminist edge: difference is not a defect but weapon.
+        </p>
+        <div class="tagline">In a world that demands sameness, dare to be the change.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 3 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://iili.io/FLklCU7.jpg" alt="Ash Book Cover">
+        </div>
+        <div class="flip-card-back">
+            <p class="review">
+Lo’s retelling replaces the glass slipper with boots and the prince with a huntress. In short, this is queer Cinderella version we desperately needed. Darkly romantic and steeped in faerie lore, this coming-of-age story keeps desire without erasing selfhood. For teens and adults tired of fairy tales that flatten their heroines, “Ash” offers teeth and tenderness: love that enlarges rather than consumes.
+        </p>
+        <div class="tagline">Cinderella leveled up and traded a prince for a huntress. Cindy got game.</div>
+        </div>
+      </div>
+    </div>
+
+    
+     <!-- Flip Card 4 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://iili.io/FLklBlS.jpg" alt="Collection of various books part of the Anita Blake Vampire Hunter Series">
+        </div>
+        <div class="flip-card-back">
+          <p class="synopsis">
+And the second book I ever thought about stealing was part of this series. Again, I don't condone theft, but titular character Anita is the Femme Fatale ideal personified. She is fierce, flawed, and perfectly unladylike in all her adventures. and sexuality. For readers seeking a heroine allowed to take up space in every domain, Anita's your girl. I'm gonna do my due diligence and say this is definitely adult reading.
+        </p>
+        <div class="tagline">She slays, she sins, she survives.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 5 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://iili.io/FLkluxj.md.jpg" alt="Quote by michele obama and a way to introduce the concept of Ana Castillos poem titled women dont riot">
+        </div>
+        <div class="flip-card-back-5">
+          <h3>Women Dont Riot by Ana Castillo</h3>
+          <p class="synopsis">
+Women don’t riot, not in maquilas in Malaysia, Mexico, or Korea,
+not in sweatshops in New York or El Paso.
+They don’t revolt
+in kitchens, laundries, or nurseries.
+Not by the hundreds or thousands, changing
+sheets in hotels or in laundries
+when scalded by hot water,
+not in restaurants where they clean and clean
+and clean their hands raw.
+
+Women don’t riot, not sober and earnest,
+or high and strung out, not of any color, 
+any race, not the rich, poor,
+or those in between. And mothers of all kinds 
+especially don’t run rampant through the streets.
+
+In college those who’ve thought it out 
+join hands in crucial times, carry signs,
+are dragged away in protest.
+We pass out petitions, organize a civilized vigil,
+return to work the next day.
+
+We women are sterilized, have more children
+than they can feed,
+don’t speak the official language,
+want things they see on TV,
+would like to own a TV—
+women who were molested as children
+raped,
+beaten,
+harassed, which means
+every last one sooner or later;
+women who’ve defended themselves
+and women who can’t or don’t know how
+we don’t—won’t ever rise up in arms.
+
+We don’t storm through cities,
+take over the press, make a unified statement,
+once and for all: A third-millennium call—
+from this day on no more, not me, not my daughter,
+not her daughter either.
+
+Women don’t form a battalion, march arm in arm
+across continents bound
+by the same tongue, same food or lack thereof,
+same God, same abandonment,
+same broken heart,
+raising children on our own, have
+so much endless misery in common
+that must stop
+not for one woman or every woman,
+but for the sake of us all.
+
+Quietly, instead, one and each takes the offense, 
+rejection, bureaucratic dismissal, disease
+that should not have been, insult,
+shove, blow to the head,
+a knife at her throat.
+She won’t fight, she won’t even scream—
+taught as she’s been
+to be brought down as if by surprise.
+She’ll die like an ant beneath a passing heel.
+Today it was her. Next time who.
+        </p>
+        </div>
+      </div>
+    </div>
+    <!-- Flip Card 6 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <img src="https://iili.io/FLklIDb.md.jpg" alt="Jacobs New Dress Book Cover">
+        </div>
+        <div class="flip-card-back">
+           <p class="synopsis">
+Clothes don't make a person; they do make it easier to express ourselves though. Jacob's Dress is an affirming picture book that handles gender nonconformity with care. Perfect for kids of all ages to get thinking about how you want to present yourself to the world.
+        </p>
+        <div class="tagline">For the pink boys, tomboys, and everything else Femme, wear your best outfit like a suit of armor and conquer your world!</div>
+        </div>
+      </div>
+    </div>
+    <!-- Flip Card 7 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://iili.io/FLklzOu.jpg" alt="Fear of Flying Book Cover">
+        </div>
+        <div class="flip-card-back">
+          <p class="synopsis">
+          Do I still identify with Jong’s Isadora? Some days. Decades after that first read, and this story still lives rent free in the front of my mind. The person I am on the inside, is that the person I show the world? What is holding me back, keeping me from doing and saying the things that need to be said? Not just in my professional life but my love life too.</p>
+      <div class="tagline">There's so much fun in being a woman once you recognize the world can be your queendom.</div>
+        </div>
+      </div>
+    </div>
+    <!-- Flip Card 8 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>Music Media</p>
+         <p>"Unpretty" by TLC</p>
+         <p>(Rap - English)</p>
+        </div>
+        <div class="flip-card-back">
+       <iframe width="325" height="315" src="https://www.youtube.com/embed/QsJa-6Ci1Rk?si=kBFKnG65foTIt9O1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Flip Card 9 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>"No Scrubs" by TLC</p>
+         <p>(Rap - English)</p>
+        </div>
+        <div class="flip-card-back">
+        <iframe width="325" height="315" src="https://www.youtube.com/embed/FrLequ6dUdM?si=8Di6Bmt6YBnQY8sL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Flip Card 10 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>Us by Ruby Ibarra</p>
+         <p>(Rap - English/Tagalog)</p>
+        </div>
+        <div class="flip-card-back">
+      <iframe width="325" height="315" src="https://www.youtube.com/embed/AUfNeCozJBw?si=wO4ELPfDeftnFraU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Flip Card 11 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <img src="https://iili.io/FLklAWx.jpg" alt="Iron Widow Book Cover">
+        </div>
+        <div class="flip-card-back">
+          <p class="synopsis">
+Sci-fi fantasy, Xiran Jay Zhao's *Iron Widow* is a war cry against misogyny. Set in a dystopia, female pilots are disposable—but the main character Zetian refuses to be another sacrifice. Fueled by righteous vengeance, she challenges the expectations placed on women. This is a brutal, empowering takedown of oppressive systems, weaving a spectacular rebellion that tears down the patriarchy and rewrites the rules. A must-read for anyone ready to see the world burn and be rebuilt.
+        </p>
+        <div class="tagline">The femme revolution is here.</div>
+        </div>
+      </div>
+    </div>
+
+<!-- Flip Card 12 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>Ur a Woman Now by Otep</p>
+         <p>(NuMetal - English)</p>
+        </div>
+        <div class="flip-card-back">
+      <iframe width="325" height="315" src="https://www.youtube.com/embed/4udK9a6fkEA?si=S0uK5j9CQRrzYE_D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+<!-- Flip Card 13 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>Queen of Queens by Miss Ko</p>
+         <p>(Rap - Mandarin/English)</p>
+        </div>
+        <div class="flip-card-back">
+      <iframe width="325" height="315" src="https://www.youtube.com/embed/z62cSYXwF4s?si=k8k3IE_rIqCbmSSp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 14 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>My Own Boss by Dizzy Dizzo</p>
+         <p>(Rap - English)</p>
+        </div>
+        <div class="flip-card-back">
+      <iframe width="325" height="315" src="https://www.youtube.com/embed/qRpVE696cW4?si=Rx1KgPFOCmFWW4Rk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 15 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>Queendom by Vinida</p>
+         <p>(Rap - Mandarin/English)</p>
+        </div>
+        <div class="flip-card-back">
+     <iframe width="325" height="315" src="https://www.youtube.com/embed/_bK_Vw5_aHI?si=EYMPfnYVZIDdx9DB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 16 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>Queendom by Awich</p>
+         <p>(Rap - Japanese/English)</p>
+        </div>
+        <div class="flip-card-back">
+      <iframe width="325" height="315" src="https://www.youtube.com/embed/K1xv_eSpC_E?si=boMB4INJ64adGg7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 17 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>Womxnly by Jolin Tsai</p>
+         <p>(Pop - Mandarin/English)</p>
+        </div>
+        <div class="flip-card-back">
+      <iframe width="325" height="315" src="https://www.youtube.com/embed/DdCJRnPFZEc?si=XyWlwtswKMaev-Mj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 18 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>"Sex Metal Barbie" by In This Moment</p>
+         <p>(Metal - English)</p>
+        </div>
+        <div class="flip-card-back">
+      <iframe width="325" height="315" src="https://www.youtube.com/embed/4ZqWLIQaKM4?si=5Zp-5ZMXN4wiOLup" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 19 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>"Whore" by In This Moment</p>
+         <p>(Metal - English)</p>
+        </div>
+        <div class="flip-card-back">
+      <iframe width="325" height="315" src="https://www.youtube.com/embed/GurkREc-q4I?si=vwOBgv6gTlqOdY6N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 20 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>"Change Your Mind" from animated tv series Steven Universe</p>
+         <p>(English)</p>
+        </div>
+        <div class="flip-card-back">
+     <iframe width="325" height="315" src="https://www.youtube.com/embed/SSP3UvM62Ds?si=n1fGEfHqcVn-vBFi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 21 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>"Stronger Than You" from animated tv series Steven Universe</p>
+         <p>(English)</p>
+        </div>
+        <div class="flip-card-back">
+      <iframe width="325" height="315" src="https://www.youtube.com/embed/NI61iulcC44?si=GnXoORZCRIfTvloU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 22 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>"Equal Rights Equal Lefts" by Otep</p>
+         <p>(NuMetal - English)</p>
+        </div>
+        <div class="flip-card-back">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/929886X4QnM?si=GbcwI3RFk9fIXM5l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 23 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>"Watch Your Mouth" by Ann One, Yoon Mirae and Rocky Rivera</p>
+         <p>(Rap - English)</p>
+        </div>
+        <div class="flip-card-back">
+      <iframe width="325" height="315" src="https://www.youtube.com/embed/OUobo9x6_cM?si=KzKpNPwEqnrnmv4a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 24 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>"Grlz" by Ruby Ibarra and Irie</p>
+         <p>(Rap - English)</p>
+        </div>
+        <div class="flip-card-back">
+      <iframe width="325" height="315" src="https://www.youtube.com/embed/T8BKMlxNa0c?si=FFcgb9Q2cOSGRoGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 25 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>"Just a Girl" by Nitty Scott</p>
+         <p>(Rap - English)</p>
+        </div>
+        <div class="flip-card-back">
+      <iframe width="325" height="315" src="https://www.youtube.com/embed/hyyvLGQocYM?si=VY2FLy9ZVtaPvk36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 26 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>"Rocky's Revenge" by Rocky Rivera</p>
+         <p>(Rap - English)</p>
+        </div>
+        <div class="flip-card-back">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/TJguAjaqq2w?si=NS6awKOICYZkLINM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+     <!-- Flip Card 27 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped');">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <p>Music Media</p>
+         <p>"For Sarah Baartman" by Nitty Scott</p>
+         <p>(Rap - English)</p>
+        </div>
+        <div class="flip-card-back">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/tFipB7Y_hCw?si=IL6KoeVEKb8yYdlm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    
+  </section>
+
+
+<p class="text-align: center">
+        As an aside. Here I am decades later and I still have the book I stole. All the librarians out there, pay attention. There is nada like school & library book binding. It is 2025 and this jawn is still intact. This book has been with me through the loss of my virginity, every girl I've kissed, all the times I snuck back into the house - and once stepped on that book to muffle the sound of my footsteps, and it'll probably still be around (and readable) when we humans go extinct.
+</p>
+
+  <footer>
+    &copy; 2025 Femme Fatale — Built with ❤️ and rebellion
+  </footer>
+
+</body>
+</html>
